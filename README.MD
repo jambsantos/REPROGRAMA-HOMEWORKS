@@ -54,4 +54,5 @@ O importante é saber a diferença entre eles e onde aplicar. Portanto não conf
 2. LINK ACESSADO DIA 10/08/2020 https://www.treinaweb.com.br/blog/qual-a-diferenca-entre-framework-e-biblioteca/
 3. LINK ACESSADO NO DIA 14/08/2020 https://www.arquitecturajava.com/framework-vs-libreria/
 
+**Feito por Jessica Montenegro** :woman_technologist:
 
