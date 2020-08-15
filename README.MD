@@ -12,8 +12,7 @@ reprograma-homework-1
 > as bibliotecas e frameworks. 
 
 ### BIBLIOTECA 
-A biblioteca é um conjunto de elementos, que resolvem necessidades específicas do projeto, empacotadas e reutilizáveis. 
-es un conjunto de elementos (funciones, clases, tipos predefinidos, constantes, variables globales, macros, etc) que es posible utilizar en un programa para facilitar la implementación de 
-ese programaPortanto cada vez que empacotas funcionalidades, está criando uma biblioteca. 
+A biblioteca é um conjunto de elementos (funções, classes, constantes, variáveis, etc), que resolvem necessidades específicas do projeto, empacotadas e reutilizáveis. 
+Portanto cada vez que empacotas funcionalidades, está criando uma biblioteca. 
 
 
