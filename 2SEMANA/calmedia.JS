@@ -34,9 +34,13 @@ if (isNaN(nota1)) {
 nota6 = input.question('Digite uma nota valida: ')
 }
 
+// calculando a média//
+
 const soma = parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4) + parseFloat(nota5) + parseFloat(nota6) 
 const media = soma / 6
 console.log('Sua média: ' + media.toFixed(2))
+
+// descobrindo a situação do aluno//
 
 if (media >= 7) {
     console.log( '----- Parabéns, você foi aprovado! -----')
@@ -47,3 +51,5 @@ if (media >= 7) {
     else {
         console.log('----- Você está reprovado -----')
     }
+
+// **Feito por Jessica Montenegro** :woman_technologist: //
