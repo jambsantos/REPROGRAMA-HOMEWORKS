@@ -1,0 +1,15 @@
+{
+  "name": "2semana",
+  "version": "1.0.0",
+  "description": "Crie um novo repositório no seu github com o nome calculando-media.\r Crie uma pasta no seu computador(com o mesmo nome) e siga\r o passo a passo que o github mostra:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
