@@ -106,4 +106,14 @@ function aleatorio(min,max) {
 // 1. A função deve receber 3 parâmetros
 // 2. Se qualquer um dos três parâmetros não estiverem preenchidos, a função deve retornar a string: "Preencha todos os valores corretamente!"
 // 3. O retorno da função deve ser a multiplicação dos 3 parâmetros, somando `2` ao resultado da multiplicação.
+let ms = 0 
+function multiplicaSoma(p1,p2,p3) {
+    if (p1 ===' ' || p2 ===' ' || p3 ===' ') {
+    console.log('Preencha todos os valores corretamente')}
+    else { 
+        return ms = (p1*p2*p3) + 2 }
+}
 
+console.log(multiplicaSoma(2,1,3))
+console.log(multiplicaSoma())
+console.log(multiplicaSoma(2,3))
