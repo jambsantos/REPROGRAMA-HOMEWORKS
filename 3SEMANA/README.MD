@@ -8,16 +8,11 @@ Antes de começar vamos baixar o readline-sync e criar o package.json
 
 ```npm install readline-sync``` para baixar o readline-sync
 
-Crie um arquivo `calculadora-de-media.js`
-Dentro dele, crie um programinha que vai receber 6 notas,
-calcular a média e dizer
-se a aluna foi aprovada, reprovada ou ficou em recuperação.
+Crie um arquivo `exerciciofunçoes.js`
+Crie um arquivo `exerciciofor.js`
+Crie um arquivo `exerciciosemana3.js`
 
-
-regras:
-* para ser __aprovada__ a média tem que ser maior ou igual 7
-* para ser __reprovada__ a média tem que ser menor que 5
-* para ir para __recuperação__ a média tem que ser maior ou igual a 5 e menor que 7
+Dentro dele, crie programas para cada exercicio de função, for e desafio da semana. 
 
 Para pegar inputs no terminal precisamos usar o
 'readline-sync'
