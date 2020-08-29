@@ -106,14 +106,75 @@ function aleatorio(min,max) {
 // 1. A função deve receber 3 parâmetros
 // 2. Se qualquer um dos três parâmetros não estiverem preenchidos, a função deve retornar a string: "Preencha todos os valores corretamente!"
 // 3. O retorno da função deve ser a multiplicação dos 3 parâmetros, somando `2` ao resultado da multiplicação.
-let ms = 0 
+
 function multiplicaSoma(p1,p2,p3) {
-    if (p1 ===' ' || p2 ===' ' || p3 ===' ') {
+    if (p1 === undefined && p2 === undefined && p3 === undefined) {
     console.log('Preencha todos os valores corretamente')}
     else { 
-        return ms = (p1*p2*p3) + 2 }
+        return  (p1*p2*p3) + 2 }
 }
 
-console.log(multiplicaSoma(2,1,3))
+console.log(multiplicaSoma(1,2,3))
 console.log(multiplicaSoma())
-console.log(multiplicaSoma(2,3))
+
+// 7) Crie uma função com as seguintes características:
+// 1. A função deve receber 3 parâmetros.
+// 2. Se somente um argumento for passado, retorne o valor do argumento.
+// 3. Se dois parâmetros forem passados, retorne a soma dos dois parâmetros.
+// 4. Se todos os parâmetros forem passados, retorne a soma do primeiro com o segundo,e o resultado dividido pelo terceiro.
+// 5. Se nenhum argumento for passado, retorne "não recebeu parâmetro"
+
+function operaTresParam(p1,p2,p3) {
+    if (p1 != undefined && p2 === undefined && p3 === undefined) {
+        return p1 }
+        else if (p1 != undefined && p2 != undefined && p3 === undefined) {
+            return p1 + p2 }
+            else if (p1 != undefined && p2 != undefined && p3 != undefined){
+                return (p1 + p2) / p3}
+                else {
+                    return `não recebeu parâmetro`}
+    }
+
+console.log(operaTresParam(1))
+console.log(operaTresParam(1,2))
+console.log(operaTresParam(3,1,2))
+console.log(operaTresParam())
+
+// 8) crie uma função que receba uma string como parâmetro, e retorne essa mesma string invertida. Por exemplo, 
+// recebendo "reprograma", vai retornar "amargorper". Para isso, você vai ter que pesquisar como usar JavaScript para inverter uma string.
+
+function inverter(nome){
+    return nome.split('').reverse('').join('')
+}
+
+console.log(inverter("jessica"))
+
+// 9) agora que você já sabe reverter strings, crie uma função que receba uma string, verifique se é um palíndromo e 
+// retorne true ou false. Exemplo de palíndromo: "arara".
+
+function palindromo(nome) {
+    inv = nome.split('').reverse('').join('')
+    if (inv === nome){
+        return true}
+        else {return false}
+    }
+
+console.log(palindromo('arara'))
+console.log(palindromo('jessica'))
+
+// 10) crie uma função que receba duas strings como parâmetros e retorne a string com a maior quantidade de caracteres. 
+// Por exemplo, se passarmos como parâmetro "banana" e "chocolate" a função deve retornar "chocolate"
+
+function comparaPalavras(name1, name2){
+    if (name1.length < name2.length) {
+        return name2}
+        else {
+            return name1}
+ }
+
+ console.log(comparaPalavras('banana', 'chocolate'))
+ console.log(comparaPalavras('jessica','ana'))
+
+
+
+
