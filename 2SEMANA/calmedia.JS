@@ -14,7 +14,7 @@ if (isNaN(nota2)) {
     nota2 = input.question('Digite uma nota valida: ')
 }
 
-let nota3 = input.question ('Digite a nota 3: ')
+ let nota3 = input.question ('Digite a nota 3: ')
 if (isNaN(nota3)) {
     nota3 = input.question('Digite uma nota valida: ')
 }
@@ -32,7 +32,7 @@ nota5 = input.question('Digite uma nota valida: ')
 let nota6 = input.question('Digite a nota 6: ')
 if (isNaN(nota1)) {
 nota6 = input.question('Digite uma nota valida: ')
-}
+} 
 
 // calculando a média//
 
