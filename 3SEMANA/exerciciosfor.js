@@ -1,31 +1,28 @@
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. 
 // Exemplo: 'banana' -> 'B A N A N A'
  
-function palavraMaius(nome){
-    
+function palavra(nome) {
+    let maiuscula = ''
+    for (let i = 0; i < nome.length; i++) {
+        maiuscula += nome[i].toUpperCase() + ' '
+    }
+    return maiuscula
 }
+
+console.log(palavra('jessica'))
 
 // 2) crie uma função que receba um número e devolva uma soma progressiva. Por exemplo, recebendo o número 5, a função 
 // deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
 
 function soma(num) {
-    let total = 0
+   let total = 0
    for (let i = 0; i <= num; i++) {
-      total = total + i  // total +=1 //
-   }
-   return total
-   }
+        total = total + i  // total +=i //
+     }
+ return total
+}
 
-console.log(soma (5))
-
-function somaProgressiva () {
-   
-   for (let numero = 1; numero <= 15; numero = numero + numero + 1) {
-       console.log (numero)
-   }   
-} 
-somaProgressiva ()
-
+console.log(soma(5))
 
 // 3) crie um programa que pergunta seu nome. Depois que digitar o nome, o programa deverá responder 'Olá [nome]'.
 // Enquanto digitar qualquer palavra, print o que foi digitado mas avise que, para sair, é só dizer 'Tchau'.
@@ -62,3 +59,20 @@ contReg (20, 0)
 // 5) crie uma função que receba um número e imprima no console de 0 até o número informado. Além disso, cada vez que 
 // imprimir o número, informe se é par ou ímpar. Exemplo: recebendo 5, deve imprimir: "0 é par", "1 é ímpar", "2 é par", 
 // "3 é ímpar", "4 'par", "5 é ímpar". 
+
+function imparPar(num) { 
+    let i = 0
+    while (i<=num) {
+        if (i% 2 == 0) {                               // ** lembrar que o operador % retorna o resto da divisão **
+            console.log(`${i} é par`)}
+            else {console.log(`${i} é impar`)} 
+    i++ } 
+}
+console.log(imparPar(4))
+
+
+
+
+
+
+
