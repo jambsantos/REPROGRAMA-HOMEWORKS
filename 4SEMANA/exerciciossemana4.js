@@ -1,6 +1,8 @@
 // DESAFIO - validador de cartão de crédito
 
-// Todos os números de cartão de crédito têm uma sequência que pode ser validada através de um algoritmo chamado Algoritmo de Luhn. Para validar qualquer número de cartão de crédito (o padrão de 16 dígitos), siga os seguintes passos:
+// Todos os números de cartão de crédito têm uma sequência que pode ser validada através de um algoritmo 
+// chamado Algoritmo de Luhn. Para validar qualquer número de cartão de crédito (o padrão de 16 dígitos), 
+// siga os seguintes passos:
 
 // 1. Retire o último dígito do número. Ele é o verificador;
 // 2. Escreva os números na ordem inversa;
@@ -19,23 +21,21 @@
 
 ///////////////////////
 
-const cartoes = [5555666677778884, 5485755481460022, 5141331902596939, 5381579886310193, 5261400319746371]
-
-function validarCartao(arr, index){
-  const arrayCartoes = []
-  const verificador = []
-  const numeroCartao = []
+function validarCard(arr, index){
+  const arrayCard = []
+  const verifica = []
+  const numCard = []
   
   for (let i = 0; i < arr.length; i++) {
-    arrayCartoes.push(arr[i].toString().split(''))
-    verificador.push(arrayCartoes[i].pop())
-    numeroCartao.push(arrayCartoes[i].reverse())
+    arrayCard.push(arr[i].toString().split(''))
+    verifica.push(arrayCard[i].pop())
+    numCard.push(arrayCard[i].reverse())
   }
 
   let mul = []
-  for (let i = 0; i < numeroCartao[index].length; i++) {
-    if (i % 2 == 0) {
-      mul.push(numeroCartao[index][i] * 2)
+  for (let i = 0; i < numCard[index].length; i++) {
+    if (i % 2 === 0) {
+      mul.push(numCard[index][i] * 2)
     }
   }
 
@@ -46,21 +46,22 @@ function validarCartao(arr, index){
     }  
   }
 
-  let total = sub.reduce((soma, num) => soma + num, 0) + parseInt(verificador[index])
+  let total = sub.reduce((soma, num) => soma + num, 0) + parseInt(verifica[index])
 
-  if (total % 10 == 0){
+  if (total % 10 === 0){
     return 'Cartão de crédito validado com sucesso'
   } else {
     return 'Cartão de crédito inválido'
   }
 }
 
-console.log(validarCartao(cartoes, 1))
+console.log(validarCard([5555666677778884, 5485755481460022, 5141331902596939, 5381579886310193, 5261400319746371], 4))
 
 // DESAFIO - saudar clientes
 
 // Escreva uma função chamada saudarCliente.
-// Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação com base em quantas vezes a cliente visitou um estabelecimento. 
+// Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação 
+// com base em quantas vezes a cliente visitou um estabelecimento. 
 // Consulte o objeto baseClientes abaixo. A saudação deve ser diferente, dependendo do nome da reserva.
 
 // Caso 1 - Cliente desconhecida (o nome não está presente no objeto baseClientes)
@@ -88,27 +89,5 @@ const baseClientes = {
     },
     Paty: {
       visitas: 3,
-    },
-
-
-    const nomes = Object.keys(baseClientes)
-
-function saudarCliente(str) {
-
-  const cliente = nomes.indexOf(str)
-   
-  if (cliente === -1) {
-    console.log(`Olá ${str}, é a primeira vez por aqui?`)
+    }
   }
-
-  let visitaCliente = baseClientes[`${str}`].visitas
-
-  if (visitaCliente === 1) {
-    console.log(`Bem vinda, ${str}! Que bom que voltou!`)
-  } else if (visitaCliente > 1) {
-    console.log(`Bem vinda mais uma vez, ${str}!`)
-  }
-
-}
-
-saudarCliente('Paty')
