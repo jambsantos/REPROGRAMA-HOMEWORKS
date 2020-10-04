@@ -1,0 +1,16 @@
+[{
+    "id":1,
+    "genero":"Musical", 
+    "temporadas": 1
+ },
+ {
+    "id":2,
+    "genero":"suspense",
+    "temporadas": 3
+ },
+ {
+    "id":3,
+    "genero":"fantasia",
+    "temporadas": 3
+ }
+]

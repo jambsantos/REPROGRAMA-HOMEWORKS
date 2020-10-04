@@ -1,0 +1,33 @@
+[{
+        "id":1,
+        "nome": "Julie and the Phantoms",
+        "genero":["Musical","fantasia","teen"],
+        "protagonista":"Julie",                    
+        "temporadas": 1,
+        "concluida": true
+     },
+     {
+        "id":2,
+        "nome": "Dark",
+        "genero":["suspense", "ação", "fantasia"],
+        "protagonista":"Jonas",                       
+        "temporadas": 3,
+        "concluida": false
+     },
+     {
+        "id":3,
+        "nome": "Anne with an E",
+        "genero":["fantasia","drama","baseada em livro"],
+        "protagonista":"Anne",                      
+        "temporadas": 3,
+        "concluida": true
+     },
+     {
+        "id":4,
+        "nome": "Dark",
+        "genero":"teste",
+        "protagonista":"teste",
+        "temporadas": 3,
+        "concluida": false 
+     }
+]
